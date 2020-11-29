@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Simon</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div class="game-body">
+            <table class="myTable">
+                <tr>
+                    <td id="casa1" onclick="simon.tentar(1)"></td>
+                    <td id="casa2" onclick="simon.tentar(2)"></td>
+                </tr>
+                <tr>
+                    <td id="casa4" onclick="simon.tentar(4)"></td>
+                    <td id="casa3" onclick="simon.tentar(3)"></td>
+                </tr>
+            </table>
+
+            
+            <button onclick="simon.mostrarCorreto()"> Iniciar </button>
+            
+
+            <dialog class="game-over-dialog">
+                <div class="game-over-message"></div>
+                <button onclick="simon.mostrarCorreto()" class="restart-button">Reiniciar</button>
+            </dialog>
+
+            
+            <span>
+                Rodada: <span id="rodada">0</span>
+            </span>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

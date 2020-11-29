@@ -1,0 +1,76 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+    padding: 16px 32px;
+    border: none;
+    color: #fff;
+    background-color: #a52a2a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: .8;
+}
+
+.game-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: radial-gradient(circle, #008b8b 0%, #008080 75%, #2f4f4f 100%);
+}
+
+td{
+    border: 1px dashed #fff5;
+    border-radius: 8px;
+    width: calc(100/2);
+    height: calc(100/2);
+    color: #fff8;
+    text-shadow: #0005 2px 2px 3px;
+}
+
+#casa1{
+    background-color: #080;
+    border-radius: 100% 0 0 0;
+}
+
+#casa2{
+    background-color: #9c0101;
+    border-radius: 0 100% 0 0;
+}
+
+#casa3{
+    background-color: #060686;
+    border-radius: 0 0 100% 0;
+}
+
+#casa4{
+    background-color: #a3a304;
+    border-radius: 0 0 0 100%;
+}
+
+.myTable{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+.game-over-dialog{
+    text-align: center;
+    border: none;
+    box-shadow: #0004 2px 2px 5px;
+}
+
+.game-over-message{
+    padding: 16px 32px;
+    font-size: 32px;
+}
